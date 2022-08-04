@@ -1,5 +1,5 @@
 {
-	"name": "diminstituicoes",
+	"name": "dimInstituicoes",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_AzureBlobStorage",
