@@ -1,0 +1,86 @@
+{
+	"name": "gerarDadosTarefa4",
+	"properties": {
+		"description": "gerarDadosTarefa4",
+		"activities": [
+			{
+				"name": "01_Extracao",
+				"description": "Gerando dados Raw",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Repos/evandersiq@outlook.com.br/ingestao_dados/tarefa 4/01 Extração"
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_AzureDatabricks",
+					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "02_DataWrangling",
+				"description": "Geração dos dados da camada Trusted",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "01_Extracao",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Repos/evandersiq@outlook.com.br/ingestao_dados/tarefa 4/02 Limpeza e Tratamento"
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_AzureDatabricks",
+					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "03_Modelagem",
+				"description": "Criando os dados para a camada Analytics",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "02_DataWrangling",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Repos/evandersiq@outlook.com.br/ingestao_dados/tarefa 4/03 SQL - Modelo StarSchema"
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_AzureDatabricks",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": []
+	}
+}
