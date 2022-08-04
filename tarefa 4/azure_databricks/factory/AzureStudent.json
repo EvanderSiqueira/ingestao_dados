@@ -1,0 +1,9 @@
+{
+	"name": "AzureStudent",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0aef9f18-0a3e-4cf4-a40d-52ea80a4e4ae",
+		"tenantId": "27bff89c-58d5-4b6d-beec-dcd6e85a2ecf"
+	}
+}
