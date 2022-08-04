@@ -9,7 +9,7 @@
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "dbo.",
+			"schema": "dbo",
 			"table": "dim_instituicoes"
 		}
 	}
