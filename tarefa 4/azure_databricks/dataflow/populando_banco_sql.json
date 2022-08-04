@@ -10,6 +10,13 @@
 						"type": "DatasetReference"
 					},
 					"name": "fatoTarifas"
+				},
+				{
+					"dataset": {
+						"referenceName": "dimCalendario",
+						"type": "DatasetReference"
+					},
+					"name": "dimCalendario"
 				}
 			],
 			"sinks": [
@@ -19,6 +26,13 @@
 						"type": "DatasetReference"
 					},
 					"name": "salvarTarifasSQL"
+				},
+				{
+					"dataset": {
+						"referenceName": "dimCalendar",
+						"type": "DatasetReference"
+					},
+					"name": "salvarCalendarioSQL"
 				}
 			],
 			"transformations": [],
@@ -37,6 +51,16 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> fatoTarifas",
+				"source(output(",
+				"          pk_calendario as short,",
+				"          ano as short,",
+				"          trimestre as short,",
+				"          trimestre_descr_curta as string,",
+				"          trimestre_descr_longa as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> dimCalendario",
 				"fatoTarifas sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     deletable:false,",
@@ -47,7 +71,18 @@
 				"     format: 'table',",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
-				"     errorHandlingOption: 'stopOnFirstError') ~> salvarTarifasSQL"
+				"     errorHandlingOption: 'stopOnFirstError') ~> salvarTarifasSQL",
+				"dimCalendario sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     deletable:false,",
+				"     insertable:true,",
+				"     updateable:false,",
+				"     upsertable:false,",
+				"     recreate:true,",
+				"     format: 'table',",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     errorHandlingOption: 'stopOnFirstError') ~> salvarCalendarioSQL"
 			]
 		}
 	}
