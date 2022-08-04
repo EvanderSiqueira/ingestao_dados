@@ -1,0 +1,53 @@
+{
+	"name": "populando_banco_sql",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "fato_tarifas",
+						"type": "DatasetReference"
+					},
+					"name": "fatoTarifas"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "AzureSqlTable1",
+						"type": "DatasetReference"
+					},
+					"name": "salvarTarifasSQL"
+				}
+			],
+			"transformations": [],
+			"scriptLines": [
+				"source(output(",
+				"          pk_tarifa as short,",
+				"          fk_calendario as short,",
+				"          fk_cnpj as integer,",
+				"          descr_tarifa as string,",
+				"          tipo_tarifa as string,",
+				"          data_vigencia as date 'yyyy-MM-dd',",
+				"          valor_maximo as double,",
+				"          tipo_valor as string,",
+				"          periodicidade as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> fatoTarifas",
+				"fatoTarifas sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     deletable:false,",
+				"     insertable:true,",
+				"     updateable:false,",
+				"     upsertable:false,",
+				"     format: 'table',",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     errorHandlingOption: 'stopOnFirstError') ~> salvarTarifasSQL"
+			]
+		}
+	}
+}
