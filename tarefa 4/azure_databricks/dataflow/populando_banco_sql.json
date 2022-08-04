@@ -27,7 +27,7 @@
 				},
 				{
 					"dataset": {
-						"referenceName": "fato_tarifas",
+						"referenceName": "fatoReclamacoes",
 						"type": "DatasetReference"
 					},
 					"name": "fatoReclamacoes"
@@ -92,7 +92,18 @@
 				"source(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> dimInstituicoes",
-				"source(allowSchemaDrift: true,",
+				"source(output(",
+				"          fk_cnpj as integer,",
+				"          fk_calendario as short,",
+				"          quantidade_reclamacoes_reguladas_procedentes as short,",
+				"          quantidade_reclamacoes_reguladas_outras as short,",
+				"          quantidade_reclamacoes_nao_reguladas as short,",
+				"          quantidade_total_reclamacoes as short,",
+				"          quantidade_total_clientes_ccs_e_scr as integer,",
+				"          quantidade_clientes_ccs as double,",
+				"          quantidade_clientes_scr as double",
+				"     ),",
+				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> fatoReclamacoes",
 				"fatoTarifas sink(allowSchemaDrift: true,",
