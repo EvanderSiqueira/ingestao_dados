@@ -17,6 +17,20 @@
 						"type": "DatasetReference"
 					},
 					"name": "dimCalendario"
+				},
+				{
+					"dataset": {
+						"referenceName": "dimInstituicoes",
+						"type": "DatasetReference"
+					},
+					"name": "dimInstituicoes"
+				},
+				{
+					"dataset": {
+						"referenceName": "fato_tarifas",
+						"type": "DatasetReference"
+					},
+					"name": "fatoReclamacoes"
 				}
 			],
 			"sinks": [
@@ -33,6 +47,20 @@
 						"type": "DatasetReference"
 					},
 					"name": "salvarCalendarioSQL"
+				},
+				{
+					"dataset": {
+						"referenceName": "dim_instituicoes",
+						"type": "DatasetReference"
+					},
+					"name": "salvarInstituicoesSQL"
+				},
+				{
+					"dataset": {
+						"referenceName": "fato_reclamacoes",
+						"type": "DatasetReference"
+					},
+					"name": "salvarReclamacoesSQL"
 				}
 			],
 			"transformations": [],
@@ -61,6 +89,12 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> dimCalendario",
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> dimInstituicoes",
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> fatoReclamacoes",
 				"fatoTarifas sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     deletable:false,",
@@ -82,7 +116,29 @@
 				"     format: 'table',",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
-				"     errorHandlingOption: 'stopOnFirstError') ~> salvarCalendarioSQL"
+				"     errorHandlingOption: 'stopOnFirstError') ~> salvarCalendarioSQL",
+				"dimInstituicoes sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     deletable:false,",
+				"     insertable:true,",
+				"     updateable:false,",
+				"     upsertable:false,",
+				"     recreate:true,",
+				"     format: 'table',",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     errorHandlingOption: 'stopOnFirstError') ~> salvarInstituicoesSQL",
+				"fatoReclamacoes sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     deletable:false,",
+				"     insertable:true,",
+				"     updateable:false,",
+				"     upsertable:false,",
+				"     recreate:true,",
+				"     format: 'table',",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     errorHandlingOption: 'stopOnFirstError') ~> salvarReclamacoesSQL"
 			]
 		}
 	}
