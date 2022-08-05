@@ -34,7 +34,7 @@ Para desenvolver esse projeto, utilizamos o serviço **Microsoft Azure**. Então
 
 
 
-#### Descrição do Projeto
+#### Resolução resumida do Projeto
 
 Precisamos preparar os dados que estão disponíveis no site do Banco Central para serem consumidos por produtos analíticos, como **Power BI** e **Tableau**.  Esses dados estão disponíveis para análise no [site do banco](https://www.bcb.gov.br/estabilidadefinanceira/tarifas_bancarias).
 
@@ -59,4 +59,6 @@ Assim, temos:
 
  <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/sql.png" />
 
+Com isso, todos os dados podem ser carregados pelo Power BI para que sejam feitas análises.
 
+Nas pastas da tarefas, todos os recursos criados no Azure.
