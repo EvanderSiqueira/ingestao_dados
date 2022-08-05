@@ -39,5 +39,4 @@ Precisamos preparar os dados que estão disponíveis no site do Banco Central pa
 
 Como comentado, vamos utilizar o Microsoft Azure na arquitetura de todo o fluxo de dados entre os dados da API/CSV para o banco SQL que vai ser consumido pelo time de analytics. Conforme demostrado abaixo:
 
-![enter image description here](raw.githubusercontent.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/esquema%20de%20dados.png?sanitize=true&raw=true)
-
+<img src="https://raw.githubusercontent.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/esquema%20de%20dados.png?sanitize=true&raw=true" />
