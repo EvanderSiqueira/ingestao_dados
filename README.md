@@ -63,3 +63,5 @@ Assim, temos:
 Com isso, todos os dados podem ser carregados pelo Power BI para que sejam feitas análises.
 
 Nas pastas da tarefas, todos os recursos criados no Azure.
+
+## Tarefa 5
