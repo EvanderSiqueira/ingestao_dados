@@ -1,0 +1,55 @@
+pk_tarifa,fk_calendario,fk_cnpj,descr_tarifa,tipo_tarifa,data_vigencia,valor_maximo,tipo_valor,periodicidade
+1101,20084,14388334,Confecção de cadastro para início de relacionamento - CADASTRO,Por cliente,2008-11-07,500.0,Real,Por evento
+1201,20191,7450604,CARTÃO - Fornecimento de 2º via de cartão com função débito,por cliente,2019-01-04,7.7,Real,Por evento
+1202,20164,17184037,CARTÃO - Fornec. de 2ª via de cartão com função mov. conta de poupança,Por cliente,2016-11-07,20.0,Real,Por evento
+1203,20191,7450604,CHEQUE - Exclusão do Cadastro de Emitentes de Cheques sem Fundo (CCF),Por Operação,2019-01-04,52.6,Real,Por evento
+1204,20191,7450604,CHEQUE - Contra-ordem e oposição ao pagamento de cheque,Por cheque,2019-01-04,13.1,Real,Por evento
+1205,20191,7450604,CHEQUE - Fornecimento de folhas de cheque,por cheque,2019-01-04,1.6,Real,Por evento
+1206,20082,14388334,CHEQUE - Cheque Administrativo,Por Cheque,2008-04-30,30.0,Real,Por evento
+1207,20112,1060307,CHEQUE - Cheque de transferência bancária_(TB e TBG),por cheque,2011-04-30,15.0,Real,Por evento
+1208,20082,61820817,CHEQUE - Cheque Visado,por cheque,2008-04-30,25.0,Real,Por evento
+1209,20143,14388334,Saque de conta de depósitos à vista e de poupança - SAQUE pessoal,Por operação,2014-07-06,1.5,Real,Por evento
+1210,20191,7450604,Saque de conta de depósitos à vista e de poupança - SAQUE Terminal,Por operação,2019-02-04,1.7,Real,Por evento
+1211,20213,3323840,Saque de conta de dep. à vista e de poupança - SAQUE correspondente,Por operação,2021-07-02,0.0,Real,Por evento
+1212,20101,3012230,DEPÓSITO - Depósito Identificado,Por operação,2010-02-03,0.0,Real,Por evento
+1213,20082,14388334,Forn. de ext. de um periodo conta dep. à vista e poup. - EXTRATO (P),Por operação,2008-04-30,1.5,Real,Por evento
+1214,20143,14388334,Forn. de ext. de um periodo conta dep. à vista e poup. - EXTRATO (E),Por operação,2014-07-06,1.5,Real,Por evento
+1215,20191,7450604,Forn. de ext. de um periodo conta dep. à vista e poup. - EXTRATO (C),por operação,2019-01-04,2.9,Real,Por evento
+1216,20082,14388334,Ext. mensal de conta de dep. à vista e poup. p/um período -EXTRATO(P),Por operação,2008-04-30,1.5,Real,Por evento
+1217,20143,14388334,Ext. mensal de conta de dep. à vista e Poup. p/um período - EXTRATO(E),por operação,2014-07-06,1.5,Real,Por evento
+1218,20123,10690848,Ext. mensal de conta de dep. à vista e poup. p/um período - EXTRATO(C),por operação,2012-07-03,4.0,Real,Por evento
+1219,20082,14388334,"Fornecimento de cópia de microfilme, microficha ou assemelhado",por operação,2008-04-30,5.0,Real,Por evento
+1301,20112,2883398,Transferência por meio de DOC/TED - DOC/TED pessoal,por operação,2011-04-01,15.0,Real,Por evento
+1302,20112,1060307,Transferência por meio de DOC/TED - DOC/TED eletrônico,por operação,2011-04-30,18.0,Real,Por evento
+1303,20112,1060307,Transferência de recursos por meio de DOC/TED - DOC/TED internet,por operação,2011-04-30,15.0,Real,Por evento
+1304,20103,14388334,Transferência agendada por meio de DOC/TED - DOC/TED agendado(P),por operação,2010-08-23,55.0,Real,Por evento
+1305,20212,2801938,Transferência agendada por meio de DOC/TED - DOC/TED agendado(E),por operação,2021-05-25,0.0,Real,Por evento
+1306,20212,2801938,Transferência agendada por meio de DOC/TED - DOC/TED agendado(I),por operação,2021-05-25,0.0,Real,Por evento
+1307,20212,2801938,Transferência entre contas na própria instituição- TRANSF. RECURSOS(P),Por operação,2021-05-25,0.0,Real,Por evento
+1308,20212,2801938,Transferência entre contas na própria instituição-TRANSF.RECURSOS(E/I),por operação,2021-05-25,0.0,Real,Por evento
+1309,20103,14388334,Ordem de Pagamento - ORDEM PAGAMENTO,por operação,2010-08-23,55.0,Real,Por evento
+1310,20112,14388334,Transferência por meio de DOC - DOC Pessoal,por evento,2011-04-01,55.0,Real,Por evento
+1311,20212,2801938,Transferência por meio de DOC - DOC eletrônico,por evento,2021-05-25,0.0,Real,Por evento
+1312,20212,2801938,Transferência por meio de DOC - DOC internet,por evento,2021-05-25,0.0,Real,Por evento
+1313,20112,14388334,Transferência por meio de TED - TED pessoal,por evento,2011-04-01,55.0,Real,Por evento
+1314,20212,2801938,Transferência por meio de TED - TED eletrônico,por evento,2021-05-25,0.0,Real,Por evento
+1315,20212,2801938,Transferência por meio de TED - TED internet,por evento,2021-05-25,0.0,Real,Por evento
+1401,20082,14388334,Concessão de adiantamento a depositante - ADIANT. DEPOSITANTE,Por operação,2008-04-30,20.0,Real,Por evento
+1501,20212,2801938,PACOTE PADRONIZADO DE SERVIÇOS I,por cliente,2021-05-25,0.0,Real,Por evento
+1502,20212,2801938,PACOTE PADRONIZADO DE SERVIÇOS II,por cliente,2021-05-25,0.0,Real,Por evento
+1503,20212,2801938,PACOTE PADRONIZADO DE SERVIÇOS III,por cliente,2021-05-25,0.0,Real,Por evento
+1504,20212,2801938,PACOTE PADRONIZADO DE SERVIÇOS IV,por cliente,2021-05-25,0.0,Real,Por evento
+1601,20164,14388334,Anuidade - cartão básico nacional,a cada 365 dias,2016-10-15,600.0,Real,A cada 365 dias
+1602,20164,14388334,Fornecimento de 2ª via de cartão com função crédito,por evento,2016-10-15,90.0,Real,Por evento
+1603,20164,14388334,Utilização de canais de atend. para retirada em espécie - no país,por evento,2016-10-15,15.0,Real,Por evento
+1604,20164,14388334,Pagamento de contas utilizando a função crédito em espécie,por evento,2016-10-15,15.0,Real,Por evento
+1605,20164,14388334,Avaliação emergencial de crédito,por evento,2016-10-15,100.0,Real,Por evento
+1606,20212,14388334,Anuidade - cartão básico internacional,a cada 365 dias,2021-05-12,1200.0,Real,A cada 365 dias
+1607,20212,14388334,Utilização de canais de atend. para retirada em espécie - no exterior,por evento,2021-05-12,100.0,Real,Por evento
+1701,20212,14388334,Venda de moeda estrangeira - espécie,Por operação,2021-05-12,350.0,Real,Por evento
+1702,20212,14388334,Venda de moeda estrangeira - cheque de viagem,Por operação,2021-05-12,350.0,Real,Por evento
+1703,20212,14388334,Venda de moeda estrangeira - cartão pré-pago - emissão e carga,Por operação,2021-05-12,350.0,Real,Por evento
+1704,20212,14388334,Venda de moeda estrangeira - cartão pré-pago - recarga,Por operação,2021-05-12,350.0,Real,Por evento
+1705,20212,14388334,Compra de moeda estrangeira - espécie,Por operação,2021-05-12,500.0,Real,Por evento
+1706,20212,14388334,Compra de moeda estrangeira - cheque de viagem,Por operação,2021-05-12,1050.0,Real,Por evento
+1707,20212,14388334,Compra de moeda estrangeira - cartão pré-pago,Por operação,2021-05-12,350.0,Real,Por evento

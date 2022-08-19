@@ -1,0 +1,1 @@
+{"version":"1.0","connections":[{"details":{"protocol":"tds","address":{"server":"tarefas-ingestao.database.windows.net","database":"ingestao"}},"mode":"DirectQuery"}]}

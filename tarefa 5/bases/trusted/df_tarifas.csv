@@ -1,0 +1,55 @@
+pk_tarifa,descr_tarifa,tipo_tarifa,data_vigencia,valor_maximo,tipo_valor,periodicidade,fk_cnpj,fk_calendario
+1101,Confecção de cadastro para início de relacionamento - CADASTRO,Por cliente,2008-11-07,500.0,Real,Por evento,14388334,20084
+1206,CHEQUE - Cheque Administrativo,Por Cheque,2008-04-30,30.0,Real,Por evento,14388334,20082
+1209,Saque de conta de depósitos à vista e de poupança - SAQUE pessoal,Por operação,2014-07-06,1.5,Real,Por evento,14388334,20143
+1213,Forn. de ext. de um periodo conta dep. à vista e poup. - EXTRATO (P),Por operação,2008-04-30,1.5,Real,Por evento,14388334,20082
+1214,Forn. de ext. de um periodo conta dep. à vista e poup. - EXTRATO (E),Por operação,2014-07-06,1.5,Real,Por evento,14388334,20143
+1216,Ext. mensal de conta de dep. à vista e poup. p/um período -EXTRATO(P),Por operação,2008-04-30,1.5,Real,Por evento,14388334,20082
+1217,Ext. mensal de conta de dep. à vista e Poup. p/um período - EXTRATO(E),por operação,2014-07-06,1.5,Real,Por evento,14388334,20143
+1219,"Fornecimento de cópia de microfilme, microficha ou assemelhado",por operação,2008-04-30,5.0,Real,Por evento,14388334,20082
+1304,Transferência agendada por meio de DOC/TED - DOC/TED agendado(P),por operação,2010-08-23,55.0,Real,Por evento,14388334,20103
+1309,Ordem de Pagamento - ORDEM PAGAMENTO,por operação,2010-08-23,55.0,Real,Por evento,14388334,20103
+1310,Transferência por meio de DOC - DOC Pessoal,por evento,2011-04-01,55.0,Real,Por evento,14388334,20112
+1313,Transferência por meio de TED - TED pessoal,por evento,2011-04-01,55.0,Real,Por evento,14388334,20112
+1401,Concessão de adiantamento a depositante - ADIANT. DEPOSITANTE,Por operação,2008-04-30,20.0,Real,Por evento,14388334,20082
+1601,Anuidade - cartão básico nacional,a cada 365 dias,2016-10-15,600.0,Real,A cada 365 dias,14388334,20164
+1602,Fornecimento de 2ª via de cartão com função crédito,por evento,2016-10-15,90.0,Real,Por evento,14388334,20164
+1603,Utilização de canais de atend. para retirada em espécie - no país,por evento,2016-10-15,15.0,Real,Por evento,14388334,20164
+1604,Pagamento de contas utilizando a função crédito em espécie,por evento,2016-10-15,15.0,Real,Por evento,14388334,20164
+1605,Avaliação emergencial de crédito,por evento,2016-10-15,100.0,Real,Por evento,14388334,20164
+1606,Anuidade - cartão básico internacional,a cada 365 dias,2021-05-12,1200.0,Real,A cada 365 dias,14388334,20212
+1607,Utilização de canais de atend. para retirada em espécie - no exterior,por evento,2021-05-12,100.0,Real,Por evento,14388334,20212
+1701,Venda de moeda estrangeira - espécie,Por operação,2021-05-12,350.0,Real,Por evento,14388334,20212
+1702,Venda de moeda estrangeira - cheque de viagem,Por operação,2021-05-12,350.0,Real,Por evento,14388334,20212
+1703,Venda de moeda estrangeira - cartão pré-pago - emissão e carga,Por operação,2021-05-12,350.0,Real,Por evento,14388334,20212
+1704,Venda de moeda estrangeira - cartão pré-pago - recarga,Por operação,2021-05-12,350.0,Real,Por evento,14388334,20212
+1705,Compra de moeda estrangeira - espécie,Por operação,2021-05-12,500.0,Real,Por evento,14388334,20212
+1706,Compra de moeda estrangeira - cheque de viagem,Por operação,2021-05-12,1050.0,Real,Por evento,14388334,20212
+1707,Compra de moeda estrangeira - cartão pré-pago,Por operação,2021-05-12,350.0,Real,Por evento,14388334,20212
+1305,Transferência agendada por meio de DOC/TED - DOC/TED agendado(E),por operação,2021-05-25,0.0,Real,Por evento,2801938,20212
+1306,Transferência agendada por meio de DOC/TED - DOC/TED agendado(I),por operação,2021-05-25,0.0,Real,Por evento,2801938,20212
+1307,Transferência entre contas na própria instituição- TRANSF. RECURSOS(P),Por operação,2021-05-25,0.0,Real,Por evento,2801938,20212
+1308,Transferência entre contas na própria instituição-TRANSF.RECURSOS(E/I),por operação,2021-05-25,0.0,Real,Por evento,2801938,20212
+1311,Transferência por meio de DOC - DOC eletrônico,por evento,2021-05-25,0.0,Real,Por evento,2801938,20212
+1312,Transferência por meio de DOC - DOC internet,por evento,2021-05-25,0.0,Real,Por evento,2801938,20212
+1314,Transferência por meio de TED - TED eletrônico,por evento,2021-05-25,0.0,Real,Por evento,2801938,20212
+1315,Transferência por meio de TED - TED internet,por evento,2021-05-25,0.0,Real,Por evento,2801938,20212
+1501,PACOTE PADRONIZADO DE SERVIÇOS I,por cliente,2021-05-25,0.0,Real,Por evento,2801938,20212
+1502,PACOTE PADRONIZADO DE SERVIÇOS II,por cliente,2021-05-25,0.0,Real,Por evento,2801938,20212
+1503,PACOTE PADRONIZADO DE SERVIÇOS III,por cliente,2021-05-25,0.0,Real,Por evento,2801938,20212
+1504,PACOTE PADRONIZADO DE SERVIÇOS IV,por cliente,2021-05-25,0.0,Real,Por evento,2801938,20212
+1201,CARTÃO - Fornecimento de 2º via de cartão com função débito,por cliente,2019-01-04,7.7,Real,Por evento,7450604,20191
+1203,CHEQUE - Exclusão do Cadastro de Emitentes de Cheques sem Fundo (CCF),Por Operação,2019-01-04,52.6,Real,Por evento,7450604,20191
+1204,CHEQUE - Contra-ordem e oposição ao pagamento de cheque,Por cheque,2019-01-04,13.1,Real,Por evento,7450604,20191
+1205,CHEQUE - Fornecimento de folhas de cheque,por cheque,2019-01-04,1.6,Real,Por evento,7450604,20191
+1210,Saque de conta de depósitos à vista e de poupança - SAQUE Terminal,Por operação,2019-02-04,1.7,Real,Por evento,7450604,20191
+1215,Forn. de ext. de um periodo conta dep. à vista e poup. - EXTRATO (C),por operação,2019-01-04,2.9,Real,Por evento,7450604,20191
+1218,Ext. mensal de conta de dep. à vista e poup. p/um período - EXTRATO(C),por operação,2012-07-03,4.0,Real,Por evento,10690848,20123
+1212,DEPÓSITO - Depósito Identificado,Por operação,2010-02-03,0.0,Real,Por evento,3012230,20101
+1208,CHEQUE - Cheque Visado,por cheque,2008-04-30,25.0,Real,Por evento,61820817,20082
+1211,Saque de conta de dep. à vista e de poupança - SAQUE correspondente,Por operação,2021-07-02,0.0,Real,Por evento,3323840,20213
+1202,CARTÃO - Fornec. de 2ª via de cartão com função mov. conta de poupança,Por cliente,2016-11-07,20.0,Real,Por evento,17184037,20164
+1207,CHEQUE - Cheque de transferência bancária_(TB e TBG),por cheque,2011-04-30,15.0,Real,Por evento,1060307,20112
+1302,Transferência por meio de DOC/TED - DOC/TED eletrônico,por operação,2011-04-30,18.0,Real,Por evento,1060307,20112
+1303,Transferência de recursos por meio de DOC/TED - DOC/TED internet,por operação,2011-04-30,15.0,Real,Por evento,1060307,20112
+1301,Transferência por meio de DOC/TED - DOC/TED pessoal,por operação,2011-04-01,15.0,Real,Por evento,2883398,20112
