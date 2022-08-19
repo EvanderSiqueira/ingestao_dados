@@ -1,6 +1,7 @@
 
 
 
+
 # Ingestão de Dados
 
 ## Tarefa 4
@@ -42,13 +43,13 @@ Precisamos preparar os dados que estão disponíveis no site do Banco Central pa
 
 Como comentado, vamos utilizar o Microsoft Azure na arquitetura de todo o fluxo de dados entre os dados da API/CSV para o banco SQL que vai ser consumido pelo time de analytics. Conforme demostrado abaixo:
 
-<img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/2774c4b3a22f3cdfb44576f709337a501d97785a/tarefa%204/esquema%20de%20dados.png" />
+<img src="tarefa 4/imagens/esquema de dados.png" />
 
 Assim, temos:
 
  1. O processamento da Extração, Limpeza e Tratamento e Modelagem via Databricks;
  
- <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/databricks.png" />
+ <img src="tarefa 4/imagens/databricks.png" />
 
  2. O resultado desse processamento sendo salvo em arquivos .csv no Azure Blob Storage, nas pastas raw, trusted e analytics;
 
