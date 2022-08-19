@@ -47,18 +47,18 @@ Assim, temos:
 
  1. O processamento da Extração, Limpeza e Tratamento e Modelagem via Databricks;
  
- <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/databricks.png" />
+ <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/imagens/databricks.png" />
 
  2. O resultado desse processamento sendo salvo em arquivos .csv no Azure Blob Storage, nas pastas raw, trusted e analytics;
 
- <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/blob%20storage.png" />
+ <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/imagens/blob%20storage.png" />
 
 
  3. Os dados da camada Analytics sendo carregados em um banco SQL com Data Factory.   
 
- <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/carregamento%20dos%20dados.png" />
+ <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/imagens/carregamento%20dos%20dados.png" />
 
- <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/sql.png" />
+ <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/imagens/sql.png" />
 
 Com isso, todos os dados podem ser carregados pelo Power BI para que sejam feitas análises.
 
