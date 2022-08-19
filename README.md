@@ -1,5 +1,6 @@
 
 
+
 # Ingestão de Dados
 
 ## Tarefa 4
@@ -47,21 +48,40 @@ Assim, temos:
 
  1. O processamento da Extração, Limpeza e Tratamento e Modelagem via Databricks;
  
- <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/imagens/databricks.png" />
+ <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/databricks.png" />
 
  2. O resultado desse processamento sendo salvo em arquivos .csv no Azure Blob Storage, nas pastas raw, trusted e analytics;
 
- <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/imagens/blob%20storage.png" />
+ <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/blob%20storage.png" />
 
 
  3. Os dados da camada Analytics sendo carregados em um banco SQL com Data Factory.   
 
- <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/imagens/carregamento%20dos%20dados.png" />
+ <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/carregamento%20dos%20dados.png" />
 
- <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/imagens/sql.png" />
+ <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%204/sql.png" />
 
 Com isso, todos os dados podem ser carregados pelo Power BI para que sejam feitas análises.
 
 Nas pastas da tarefas, todos os recursos criados no Azure.
 
 ## Tarefa 5
+
+Como já tínhamos realizado todo o trabalho na plataforma Azure até a visualização dos dados, resolvemos melhorar o código de processamento e tratamento dos dados, como também melhorar o Power BI.
+
+ <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%205/novo_datawrangling_pyspark.png" />
+
+Assim, refizemos todo o código que antes estava escrito em Python para PySpark aproveitando assim, melhor a capacidade do Databricks para o processamento dos dados.
+Basicamente, alteramos o Data Factory para considerar esse novo Notebook e eliminamos a modelagem em SQL, desnecessária uma vez que já modelamos os dados também com PySpark.
+
+ <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%205/pipeline_tarefa5.png" />
+
+No fim, conectamos nosso arquivo Power BI ao banco SQL e ajustamos algumas coisas. A principal alteração foi na modelagem. Agora, usamos apenas Instituições Financeira, e não mais Conglomerados. 
+Nas versões anteriores , tentamos usar os dados dos conglomerados, porém não achamos uma base correta para ligar as instituições dos conglomerados com a base de reclamações, por meio de um CNPJ.
+
+ <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%205/powerbi.png" />
+ <img src="https://github.com/EvanderSiqueira/ingestao_dados/blob/main/tarefa%205/rnk_gov.png" />
+
+
+Com isso, os números do Power BI batem exatamente com o dashboard do [Banco Central](https://www.bcb.gov.br/estabilidadefinanceira/rankingreclamacoes), para instituições financeira (não conglomerados).
+
